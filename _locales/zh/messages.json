@@ -1,0 +1,24 @@
+﻿{
+	// 关于扩展的信息
+	"extName"       : {
+		"message"    : "cbeta.com 评论历史查看插件",
+		"description": "扩展的名字"
+	},
+	"extDescription": {
+		"message"    : "如果 cb 没有了评论,就没有了色彩.",
+		"description": "扩展的描述"
+	},
+
+	/* 单词 */
+	
+	/* 句子   */
+	
+
+	/* 段落 */
+
+	// last one
+	"last_one":{
+	    "message":"",
+	    "description":""
+	}
+}

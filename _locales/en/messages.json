@@ -1,0 +1,11 @@
+{
+	// About the extension
+	"extName"       : {
+		"message"    : "Js Sniffer",
+		"description": "Name"
+	},
+	"extDescription": {
+		"message"    : "Web page tech, context, framework sniffer",
+		"description": "Desc"
+	}
+}

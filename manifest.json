@@ -1,0 +1,41 @@
+{
+	// 基本信息
+	"name": "__MSG_extName__",
+	"description": "__MSG_extDescription__",
+	"default_locale": "zh",
+	"version": "0.1.1",
+
+	"author":"wener<http://wener.me>",
+
+	// 插件基本配置
+	"manifest_version": 2,
+
+	"page_action": {
+		"default_icon": "images/logo-16.png",
+		"default_title": "Powered by CBHistory.",
+		"popup": "popup.html"
+	},
+
+	// 后台操作
+	"background": {
+		"scripts": ["js/u5.js", "js/eventpage.js"]
+	},
+	// 页面脚本
+	"content_scripts": [
+		{
+			"matches": ["http://www.cnbeta.com/*", "https://www.cnbeta.com/*"],
+			"js": ["js/u5.js", "js/content_script.js"],
+			"run_at": "document_start"
+		}
+	],
+	// 权限
+	"permissions": ["http://www.cnbeta.com/*", "https://www.cnbeta.com/*", "tabs"],
+	"icons": {
+		"16": "images/logo-16.png",
+		"48": "images/logo-48.png",
+		"128": "images/logo-128.png"
+	},
+	"web_accessible_resources": [
+		"js/*", "css/*", "images/*"
+	]
+}
