@@ -1,25 +1,26 @@
 /* global Event */
 "use strict";
-
-var cmtXhr = null;
-var fakeCmtRequestUrl = "http://localhost:8080/cmt";
-
 (function() {
+
+	var cmtXhr = null;
+	// 只有开启 DEBUG 的时候,才会打印控制台信息
+	var DEBUG = false;
+	var fakeCmtRequestUrl = DEBUG?"http://localhost:8080/cmt":"http://cbhistory.jd-app.com/";
 
 	// region 因为不能导入 U5,所以造一个非常简单的logger
 	var Logger = function()
 	{};
 	Logger.prototype.debug = function()
 	{
-		console.log.apply(console, arguments);
+		DEBUG && console.log.apply(console, arguments);
 	};
 	Logger.prototype.error = function()
 	{
-		console.error.apply(console, arguments);
+		DEBUG && console.error.apply(console, arguments);
 	};
 	Logger.prototype.info = function()
 	{
-		console.info.apply(console, arguments);
+		DEBUG && console.info.apply(console, arguments);
 	};
 	// endregion
 
