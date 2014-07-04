@@ -19,3 +19,9 @@ cbHistory-西贝历史评论插件
 | 2014-04-27 18:10:55 | 复旦科学家发明削减广场舞噪音“神器” |
 +---------------------+------------------------------------+
 ```
+
+
+相关项目
+--------
+* [cbhistory 服务端](https://github.com/wenerme/cbhistory)
+* [cbhistory chrome 插件](https://github.com/wenerme/cbhistory-extension)

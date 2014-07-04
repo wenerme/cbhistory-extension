@@ -4,7 +4,7 @@
 
 	var cmtXhr = null;
 	// 只有开启 DEBUG 的时候,才会打印控制台信息
-	var DEBUG = false;
+	var DEBUG = true;
 	var fakeCmtRequestUrl = DEBUG?"http://localhost:8080/cmt":"http://cbhistory.jd-app.com/";
 
 	// region 因为不能导入 U5,所以造一个非常简单的logger
@@ -83,6 +83,7 @@
 								fakeResponseText = responseText;
 							}
 						}else{
+							log.error("服务器状态异常.");
 							fakeResponseText = responseText;
 						}
 

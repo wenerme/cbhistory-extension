@@ -16,7 +16,16 @@
  * @name U5
  */
 
+// 当前上下文对象
+(function(U5)
+{
+	var ctx = {
+		DEBUG:true
+	};
 
+	U5['Context'] = ctx;
+
+})(window.U5 || (window.U5 = {}));
 
 // for
 // 基本 扩展
